@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+   <FrameLayout
+        android:id="@+id/f1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/tittle_view" />
+    </FrameLayout>
+
+    <ListView
+        android:layout_below="@+id/f1"
+        android:id="@+id/listView1"
+         android:listSelector="@drawable/list_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:dividerHeight="1dp"
+        android:layout_alignParentLeft="true"
+       >
+    </ListView>
+  
+</RelativeLayout>

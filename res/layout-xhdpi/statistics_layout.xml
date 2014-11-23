@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ecedef">
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:background="@drawable/tv_bg1"/>
+
+        <TextView
+            android:id="@+id/curr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#ff000000"/>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:background="@drawable/tv_bg"/>
+    </LinearLayout>
+
+  
+    <RelativeLayout
+        android:id="@+id/layout_piechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_layout" 
+        android:layout_marginTop="20dp">
+
+        <com.melhc.pirechat.PieChartView
+            android:id="@+id/parbar_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parbar_view"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/show_chart_bg"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+      <LinearLayout
+        android:id="@+id/foot2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         >
+
+        <include layout="@layout/foot2" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=52, tid=5996
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_17-b02
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.7-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000101e000):  JavaThread "Unknown thread" [_thread_in_vm, id=5996, stack(0x0000000002ab0000,0x0000000002bb0000)]
+
+Stack: [0x0000000002ab0000,0x0000000002bb0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000101e000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5996, stack(0x0000000002ab0000,0x0000000002bb0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.013 loading class 0x0000000002bf88c0 done
+Event: 0.014 loading class 0x0000000002bf8500 done
+Event: 0.014 loading class 0x0000000002bbace0
+Event: 0.014 loading class 0x0000000002c002b0
+Event: 0.014 loading class 0x0000000002c002b0 done
+Event: 0.014 loading class 0x0000000002c00730
+Event: 0.014 loading class 0x0000000002c00730 done
+Event: 0.014 loading class 0x0000000008c4ebf0
+Event: 0.014 loading class 0x0000000008c4ebf0 done
+Event: 0.014 loading class 0x0000000002bbace0 done
+
+
+Dynamic libraries:
+0x000007f6dfe40000 - 0x000007f6dfe73000 	E:\Eclipse\adt-bundle-windows-x86_64-20131030\eclipse\jre\bin\javaw.exe
+0x000007fdf3440000 - 0x000007fdf3600000 	C:\windows\SYSTEM32\ntdll.dll
+0x000007fdf2790000 - 0x000007fdf28c7000 	C:\windows\system32\KERNEL32.DLL
+0x000007fdf03a0000 - 0x000007fdf0494000 	C:\windows\system32\KERNELBASE.dll
+0x000007fde8c50000 - 0x000007fde8cef000 	C:\windows\system32\apphelp.dll
+0x000007fdf32e0000 - 0x000007fdf33be000 	C:\windows\system32\ADVAPI32.dll
+0x000007fdf2f60000 - 0x000007fdf30ac000 	C:\windows\system32\USER32.dll
+0x000007fdeda80000 - 0x000007fdedcea000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.16579_none_418ab7ef718b27ef\COMCTL32.dll
+0x000007fdf2540000 - 0x000007fdf25e5000 	C:\windows\system32\msvcrt.dll
+0x000007fdf24f0000 - 0x000007fdf2538000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fdf2640000 - 0x000007fdf2785000 	C:\windows\system32\RPCRT4.dll
+0x000007fdf28f0000 - 0x000007fdf2a31000 	C:\windows\system32\GDI32.dll
+0x000007fdf2120000 - 0x000007fdf2159000 	C:\windows\system32\IMM32.DLL
+0x000007fdf2210000 - 0x000007fdf2326000 	C:\windows\system32\MSCTF.dll
+0x000000006e480000 - 0x000000006e551000 	E:\Eclipse\adt-bundle-windows-x86_64-20131030\eclipse\jre\bin\msvcr100.dll
+0x000000006e820000 - 0x000000006ef3f000 	E:\Eclipse\adt-bundle-windows-x86_64-20131030\eclipse\jre\bin\server\jvm.dll
+0x000007fde9120000 - 0x000007fde9129000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x000007fde9d10000 - 0x000007fde9d30000 	C:\windows\SYSTEM32\WINMM.dll
+0x000007fdf33c0000 - 0x000007fdf33c7000 	C:\windows\system32\PSAPI.DLL
+0x000007fdf1da0000 - 0x000007fdf1df8000 	C:\windows\system32\WS2_32.dll
+0x000007fde9be0000 - 0x000007fde9c13000 	C:\windows\SYSTEM32\WINMMBASE.dll
+0x000007fdf30b0000 - 0x000007fdf30b9000 	C:\windows\system32\NSI.dll
+0x000007fdf04a0000 - 0x000007fdf04ef000 	C:\windows\SYSTEM32\cfgmgr32.dll
+0x000007fdf06f0000 - 0x000007fdf0712000 	C:\windows\system32\DEVOBJ.dll
+0x000000006e810000 - 0x000000006e81f000 	E:\Eclipse\adt-bundle-windows-x86_64-20131030\eclipse\jre\bin\verify.dll
+0x000000006e7e0000 - 0x000000006e808000 	E:\Eclipse\adt-bundle-windows-x86_64-20131030\eclipse\jre\bin\java.dll
+0x000000006e7c0000 - 0x000000006e7d5000 	E:\Eclipse\adt-bundle-windows-x86_64-20131030\eclipse\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:E:\Eclipse\adt-bundle-windows-x86_64-20131030\sdk\platforms\android-19\android.jar 
+java_command: com.example.account.query.MyAdapter
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=E:/Eclipse/adt-bundle-windows-x86_64-20131030/eclipse/jre/bin/server;E:/Eclipse/adt-bundle-windows-x86_64-20131030/eclipse/jre/bin;E:/Eclipse/adt-bundle-windows-x86_64-20131030/eclipse/jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;E:\Eclipse\adt-bundle-windows-x86_64-20131030\eclipse;
+USERNAME=Melhc0623
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 3806748k(1260844k free), swap 7738912k(3962592k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.7-b01) for windows-amd64 JRE (1.7.0_17-b02), built on Mar  1 2013 03:38:30 by "java_re" with unknown MS VC++:1600
+
+time: Wed Aug 13 10:55:14 2014
+elapsed time: 0 seconds
+

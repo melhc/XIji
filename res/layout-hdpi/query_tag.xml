@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/f3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/tittle_view" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/add_item_text2"
+        android:layout_alignLeft="@+id/sum"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="20dp"
+        android:text="@string/project" />
+
+    <TextView
+        android:id="@+id/clock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/sum"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/sum"
+        style="@style/add_item_text2"
+        android:layout_below="@+id/f3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/category" />
+  
+
+    <TextView
+        android:id="@+id/query_start"
+        style="@style/add_item_text2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="20dp"
+        android:text="@string/query_start" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+       
+        android:layout_alignBottom="@+id/query_start"
+        android:layout_marginLeft="120dp"
+        android:text="@string/date2" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/query_start"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/sloid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_item_divide" />
+
+    <TextView
+        android:id="@+id/query_end"
+        style="@style/add_item_text2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="20dp"
+        android:text="@string/query_end" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/query_end"
+        android:layout_alignBottom="@+id/query_end"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="@string/date2"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/foot2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/foot2" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sum"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/sloid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_item_divide" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/sloid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_item_divide" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="58dp"
+        android:background="@null"
+        android:entries="@array/project_outcome" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="115dp"
+        android:background="@null"
+        android:entries="@array/project_income" />
+
+    
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/query_end"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/sloid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_item_divide" />
+
+</RelativeLayout>

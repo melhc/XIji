@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/f1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/tittle_view" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/f1"
+         android:listSelector="@drawable/list_item_bg"
+        android:dividerHeight="1dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/query2_sum_text"
+        style="@style/query_item_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="5dp"
+        android:text="@string/sum_text" />
+
+    <TextView
+        android:id="@+id/query2_sum"
+        style="@style/query_item_text"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/query2_sum_text"
+        android:paddingBottom="5dp"
+        android:text="@string/sum_account" />
+
+</RelativeLayout>

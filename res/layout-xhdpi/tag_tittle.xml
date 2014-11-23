@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/theme_color">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:id="@+id/r1_back"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back_background" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:contentDescription="@string/sloid"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1_add"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_background" >
+
+        <ImageView
+            android:id="@+id/add_tag"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/sloid"
+            android:src="@drawable/add_tag" />
+    </RelativeLayout>
+
+</RelativeLayout>

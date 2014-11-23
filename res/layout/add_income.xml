@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sum"
+        android:layout_below="@+id/sum"
+        android:layout_marginTop="16dp"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clock"
+        android:layout_below="@+id/clock"
+        android:layout_marginTop="16dp"
+        android:text="@string/category" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sum"
+        android:layout_toRightOf="@+id/editText1"
+        android:text="@string/rmb" />
+
+    <TextView
+        android:id="@+id/clock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clock"
+        android:layout_alignBottom="@+id/clock"
+        android:layout_alignLeft="@+id/editText1"
+        android:background="@drawable/clock_text"
+        android:text=""
+        android:textColor="@color/clock_text_color" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/remarks"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/sloid"
+        android:scaleType="matrix"
+        android:src="@drawable/list_item_divide_operate" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/add_button_text"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cancel"
+        android:width="150dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_toRightOf="@+id/button1"
+        android:contentDescription="@string/sloid"
+        android:scaleType="matrix"
+        android:src="@drawable/list_item" />
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/sum" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/add_button_text"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/imageView2"
+        android:background="@android:color/transparent"
+        android:text="@string/ok"
+        android:width="150dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="83dp"
+        android:background="@null" />
+
+    <com.example.account.utils.MyEditText
+        android:id="@+id/editText1"
+        android:layout_width="80dp"
+         android:maxLines="2"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sum"
+        android:layout_alignBottom="@+id/sum"
+        android:layout_toRightOf="@+id/sum"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/remarks" />
+
+    <com.example.account.utils.MyEditText
+        android:id="@+id/remarks_text"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/remarks"
+        android:layout_alignBottom="@+id/remarks"
+        android:layout_alignLeft="@+id/clock_time"
+        android:background="@null"
+        android:ems="10"
+        android:textSize="15sp" />
+
+</RelativeLayout>

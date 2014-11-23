@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">奚记</string>
+    <string name="version">4.1</string>
+    <string name="query">流水</string>
+    <string name="month_income">当月收入：</string>
+    <string name="month_outcome">当月支出： </string>
+    <string name="account_sum">账户余额： </string>
+    <string name="query_start">起始时间： </string>
+    <string name="query_end">终止时间： </string>
+    <string name="time">时间：</string>
+    <string name="category">类别：</string>
+    <string name="cancel">取消 </string>
+    <string name="ok">确定 </string>
+    <string name="rmb">元 </string>
+    <string name="sum">金额： </string>
+    <string name="sum_account">总&#160;计： </string>
+    <string name="remarks">备注： </string>
+    <string name="remarks2">备 注： </string>
+    <string name="sloid">线 </string>
+    <string name="time_text">10:30:43</string>
+    <string name="sum_text">50元</string>
+    <string name="sum_text3">50</string>
+    <string name="sum_text2">5000</string>
+    <string name="project_text">早晚午餐 </string>
+    <string name="project">项目：</string>
+    <string name="year">2014年 </string>
+    <string name="month">July </string>
+    <string name="date">2014.08.23</string>
+    <string name="date2">2014年8月4日</string>
+    <string name="feedback_text">奚记，希望听见您最真挚的声音 </string>
+    <string name="address">联系方式:邮箱/QQ/手机号 </string>
+    <string name="commit">提交 </string>
+    <string name="income_outcome">收支详情 </string>
+    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
+    <string name="username">用户名：</string>
+    <string name="register">注册 </string>
+    <string name="login">登录 </string>
+    <string name="symbol">￥</string>
+    <string name="symbol2">%</string>
+    <string name="account_text">占总支出</string>
+    <string name="password_text1">请输入原来密码</string>
+    <string name="password_text2">请输入新密码</string>
+    <string name="password_text">请输入初始密码</string>
+    <string name="password_text3">请再次输入密码</string>
+    <string name="username_text">请输入账号邮箱</string>
+    <string name="setting1">记账提醒</string>
+    <string name="setting2">修改密码</string>
+    <string name="setting3">意见反馈</string>
+    <string name="setting4">退出登录</string>
+    <string name="setting5">账号保护</string>
+    <string name="gue">请输入手势密码</string>
+    <string name="tag">新增支出标签</string>
+    <string name="weibo2">微博账号登录</string>
+    <string name="qq">QQ账号登录</string>
+    <string name="remark3">没有备注哦！</string>
+
+    <string-array name="category_array">
+        <item>不限</item>
+        <item>收入</item>
+        <item>支出</item>
+    </string-array>
+    <string-array name="project_all">
+        <item>所有项目</item>
+    </string-array>
+    <string-array name="project_outcome">
+        <item>早晚午餐</item>
+        <item>零食酒水</item>
+        <item>休闲娱乐</item>
+        <item>学习书刊</item>
+        <item>美容美发</item>
+        <item>服饰用品</item>
+        <item>出行交通</item>
+        <item>交流通讯</item>
+        <item>求医买药</item>
+        <item>数码百货</item>
+        <item>其他支出</item>
+    </string-array>
+    <string-array name="project_income">
+        <item>生活费用</item>
+        <item>工资收入</item>
+        <item>兼职收入</item>
+        <item>奖金收入</item>
+        <item>利息收入</item>
+        <item>其他收入</item>
+    </string-array>
+    <string-array name="month">
+        <item>2014&#160;年&#160;1&#160;月&#160;</item>
+        <item>2014&#160;年&#160;2&#160;月&#160;</item>
+        <item>2014&#160;年&#160;3&#160;月&#160;</item>
+        <item>2014&#160;年&#160;4&#160;月&#160;</item>
+        <item>2014&#160;年&#160;5&#160;月&#160;</item>
+        <item>2014&#160;年&#160;6&#160;月&#160;</item>
+        <item>2014&#160;年&#160;7&#160;月&#160;</item>
+        <item>2014&#160;年&#160;8&#160;月&#160;</item>
+        <item>2014&#160;年&#160;9&#160;月&#160;</item>
+        <item>2014&#160;年&#160;10&#160;月&#160;</item>
+        <item>2014&#160;年&#160;11&#160;月&#160;</item>
+        <item>2014&#160;年&#160;12&#160;月&#160;</item>
+    </string-array>
+
+</resources>

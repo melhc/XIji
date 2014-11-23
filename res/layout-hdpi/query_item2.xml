@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/query_Id"
+    >
+
+    <TextView
+        android:id="@+id/query_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/project_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/query_project"
+        android:layout_below="@+id/seekBar1"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/query_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/seekBar1"
+        android:layout_marginRight="22dp"
+        android:text="@string/sum_text3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/query_sum"
+        android:layout_toLeftOf="@+id/query_sum"
+        android:text="@string/symbol" />
+
+    <ProgressBar
+        android:id="@+id/seekBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/query_project"
+        android:layout_alignParentRight="true"
+        android:progressDrawable="@drawable/myprogress_style" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:text="@string/symbol2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_marginLeft="280dp"
+        android:text="@string/sum_text3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="@string/account_text" />
+
+</RelativeLayout>

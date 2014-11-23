@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+      android:id="@+id/add_l1"
+    android:background="@drawable/list_item_bg"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+      style="@style/add_item_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/time_text"
+        android:textColor="@color/clock_text_color"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/add_item_text"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/project_text"
+        android:textColor="@color/clock_text_color"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/add_item_text"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:text="@string/sum_text"
+        android:textColor="@color/clock_text_color"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="" 
+        android:textColor="@color/clock_text_color"
+        />
+
+</RelativeLayout>
