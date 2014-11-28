@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.melhc.xiji"
-    android:versionCode="22"
-    android:versionName="4.2" >
+    android:versionCode="23"
+    android:versionName="4.2.1" >
 
     <uses-sdk
         android:minSdkVersion="13"
@@ -31,7 +31,7 @@
         android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         <meta-data
             android:name="Channel ID"
-            android:value="开发者测试" />
+            android:value="小米商城" />
 
         <activity
             android:name="com.example.account.login.EntranceActivity"
@@ -88,6 +88,10 @@
             android:name="com.example.account.query.QueryActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.account.query.QueryActivity1"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.account.query.QueryActivity3"

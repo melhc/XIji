@@ -3,7 +3,7 @@
 
     <string name="app_name">奚记</string>
     <string name="version">4.1</string>
-    <string name="query">流水</string>
+    <string name="query">分类筛选</string>
     <string name="month_income">当月收入：</string>
     <string name="month_outcome">当月支出： </string>
     <string name="account_sum">账户余额： </string>

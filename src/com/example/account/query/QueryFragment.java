@@ -31,6 +31,7 @@ import android.view.ViewGroup;
 
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class QueryFragment extends Fragment {
 
@@ -103,12 +104,14 @@ public class QueryFragment extends Fragment {
 
 	public void initFoot(View view) {
 		LinearLayout query_tag = (LinearLayout) view.findViewById(R.id.foot2);
+		TextView query_text=(TextView)query_tag.findViewById(R.id.query_tag);
+		query_text.setText("Á÷Ë®");
 		query_tag.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(getActivity(), QueryActivity.class);
+				Intent intent = new Intent(getActivity(), QueryActivity1.class);
 				startActivity(intent);
 				flag = false;
 			}

@@ -62,11 +62,12 @@ public class QueryActivity extends Activity {
 
 	public void intDate() {
 		c = Calendar.getInstance();
-		year = year2 = c.get(Calendar.YEAR);
+		year = c.get(Calendar.YEAR) - 1;
+		year2 = c.get(Calendar.YEAR) + 1;
 		month = month2 = c.get(Calendar.MONTH) + 1;
 		day = day2 = c.get(Calendar.DAY_OF_MONTH);
 		date1 = year + " 年 " + month + " 月 " + day + " 日 ";
-		date2 = year + 1 + " 年 " + month + " 月 " + day + " 日 ";
+		date2 = year2 + " 年 " + month + " 月 " + day + " 日 ";
 		time1.setText(date1);
 		time2.setText(date2);
 		query_tag.setText("确定");
@@ -163,7 +164,7 @@ public class QueryActivity extends Activity {
 										+ " 日 ";
 								time2.setText(date2);
 							}
-						}, year2 + 1, month2 - 1, day2);
+						}, year2, month2 - 1, day2);
 				datePickerDialog2.show();
 
 				break;
@@ -219,6 +220,7 @@ public class QueryActivity extends Activity {
 			}
 		});
 	}
+
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
