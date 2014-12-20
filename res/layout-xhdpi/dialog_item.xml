@@ -20,7 +20,7 @@
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:textSize="12sp"
-        android:textColor="#96d481"
+        android:textColor="@color/theme_color"
         />
 
 </RelativeLayout>

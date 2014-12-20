@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.melhc.xiji"
-    android:versionCode="23"
-    android:versionName="4.2.1" >
+    android:versionCode="25"
+    android:versionName="4.3" >
 
     <uses-sdk
         android:minSdkVersion="13"
@@ -31,7 +31,7 @@
         android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         <meta-data
             android:name="Channel ID"
-            android:value="小米商城" />
+            android:value="豌豆荚 "/>
 
         <activity
             android:name="com.example.account.login.EntranceActivity"

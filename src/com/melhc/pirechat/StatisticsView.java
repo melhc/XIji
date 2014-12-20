@@ -210,6 +210,9 @@ public class StatisticsView extends ViewGroup implements OnClickListener {
 		mMinMonth = mMaxMonth = mCurrDate = c.get(Calendar.MONTH) + 1;
 		mLastDate = mCurrDate - 1;
 		mNextDate = mCurrDate + 1;
+		if(mNextDate==13){
+			mNextDate=1;
+		}
 		mMinYear = mMaxYear - 2;
 		freshDate();
 	}
@@ -225,6 +228,9 @@ public class StatisticsView extends ViewGroup implements OnClickListener {
 		mMaxYear = year + 1;
 		mMinMonth = mMaxMonth = mCurrDate = month;
 		mNextDate = mCurrDate + 1;
+		if(mNextDate==13){
+			mNextDate=1;
+		}
 		mLastDate = mCurrDate - 1;
 		mMinYear = mMaxYear - 2;
 		freshDate();
